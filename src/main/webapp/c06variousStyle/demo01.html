@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设置文本样式</title>
+    <style type="text/css">
+        /*字体样式*/
+        .p1 {
+            border: 1px red solid;
+            /*字体名称，可以多写几个备用的，顺序匹配，匹配到哪个用哪个*/
+            font-family: "Times New Roman", Arial;
+            /*字体倾斜*/
+            font-style: italic;
+            /*字体加粗*/
+            font-weight: bold;
+        }
+
+        /*文字样式*/
+        .p2 {
+            border: 1px red solid;
+            /*文字大小*/
+            font-size: 26px;
+            /*capitalize单词首字母大写转换 uppercase大写转换 lowercase小写转换*/
+            text-transform: capitalize;
+            /*文字横线 none默认 underline下划线 line-through横线 overline上划线*/
+            text-decoration: line-through;
+            /* 首行缩进em代表一个汉字的距离 */
+            text-indent: 2em;
+            /* 英文单词之间间距 */
+            word-spacing: 20px;
+            /* 单个字母之间间距、单个汉字（被当做单个单词）之间间距 */
+            letter-spacing: 2px;
+            /* 文字行高，默认1.2,行高是文字高度的1.2倍。 */
+            line-height: 1.5;
+            /* 文字颜色 */
+            color: blue;
+            /* 文字水平位置，默认left 右right 居中center 两端对齐justify*/
+            text-align: justify
+        }
+
+        /*文本框样式*/
+        .p3 {
+            border: 1px red solid;
+            /* 文本框间距，左右相加，上下取声明值的最大值 */
+            margin: 1px;
+            padding: 10px;
+            /* 文字背景颜色 */
+            background-color: gray;
+
+        }
+
+    </style>
+</head>
+<body>
+<p class="p1">study hard and make progress every day.好好学习，天天向上。study hard and make progress every day.好好学习，天天向上。study
+    hard and make progress every day.好好学习，天天向上。study hard and make progress every day.好好学习，天天向上。study hard and make
+    progress every day.好好学习，天天向上。study hard and make progress every day.好好学习，天天向上。</p>
+<p class="p2">study hard and make progress every day.好好学习，天天向上。study hard and make progress every day.好好学习，天天向上。study
+    hard and make progress every day.好好学习，天天向上。study hard and make progress every day.好好学习，天天向上。</p>
+<p class="p3">
+    高斯林一直对oracle公司抱有不满。这位工程师在离开甲骨文时写到，“我所说的都关乎细节与诚实，但吐露真相只会带来更多的坏处。”并称，“在Sun与oracle的并购会议上，到处是有关Sun和谷歌专利的争吵。oracle律师的眼睛闪闪发光。”
+    他表示，在收购Sun的早期阶段，oracle就表示出要同谷歌展开法律交锋的意愿。他本人也曾批评Android市场上的碎片化现象太过严重，足以影响软件开发者的工作。
+</p>
+
+</body>
+</html>

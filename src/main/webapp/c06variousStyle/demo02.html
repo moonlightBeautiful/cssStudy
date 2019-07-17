@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <title>段落的垂直对齐方式</title>
+    <style>
+        /* just borders to see it */
+        .greenBorder {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+<div class="greenBorder" style="display: table; height: 400px; #position: relative; overflow: hidden;">
+    <div style=" #position: absolute; #top: 50%;display: table-cell; vertical-align: middle;">
+        <div class="greenBorder" style=" #position: relative; #top: -50%">
+            any text<br>
+            any height<br>
+            any content, for example generated from DB<br>
+            everything is vertically centered
+        </div>
+    </div>
+</div>
+</body>
+</html>

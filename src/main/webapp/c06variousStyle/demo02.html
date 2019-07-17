@@ -1,25 +1,124 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
 <html>
 <head>
-    <title>段落的垂直对齐方式</title>
-    <style>
-        /* just borders to see it */
-        .greenBorder {
-            border: 1px solid green;
+    <meta charset="UTF-8">
+    <title>设置图片样式</title>
+    <style type="text/css">
+        /* 边框样式，分别统一设置 */
+        .i1 {
+            /* 边框宽度 */
+            border-width: 1px;
+            /* 边框颜色 */
+            border-color: red;
+            /* 边框样式 solid实线 dashed横线虚线 dotted点虚线*/
+            border-style: solid;
+        }
+
+        /* 边框样式，统一设置 */
+        .i2 {
+            /* 边框宽度、颜色、样式 */
+            border: 2px red dotted;
+        }
+
+        /* 边框样式，上线左右分别统一设置，也可以上线左右分别设置，但是麻烦 */
+        .i3 {
+            /* 上下左右边框分别设置宽度、颜色、样式 */
+            border-top: 6px red solid;
+            border-right: 2px blue dashed;
+            border-bottom: 2px yellow dotted;
+            border-left: 2px blue dashed;
+        }
+
+        /* 图片大小 */
+        .i4 {
+            /* 图片大小 也可以用百分比20%*/
+            height: 200px;
+            width: 300px;
+        }
+
+        /* 图文混排 */
+        .i5 {
+            height: 200px;
+            width: 300px;
+            /* 做浮动left */
+            float: left;
+            margin: 10px;
+        }
+
+        /*图片和文本竖直对齐方式*/
+        p {
+            border: 1px red solid;
+            background-color: lightblue;
+        }
+
+        p span {
+            background-color: lightgreen;
+        }
+
+        .i6 {
+            vertical-align: baseline;
+        }
+
+        .i7 {
+            vertical-align: top;
+        }
+
+        .i8 {
+            border: 1px red solid;
+            vertical-align: middle;
+        }
+
+        .i9 {
+            border: 1px red solid;
+            vertical-align: bottom;
         }
     </style>
 </head>
-
 <body>
-<div class="greenBorder" style="display: table; height: 400px; #position: relative; overflow: hidden;">
-    <div style=" #position: absolute; #top: 50%;display: table-cell; vertical-align: middle;">
-        <div class="greenBorder" style=" #position: relative; #top: -50%">
-            any text<br>
-            any height<br>
-            any content, for example generated from DB<br>
-            everything is vertically centered
-        </div>
-    </div>
-</div>
+<h1>默认无边框，默认大小</h1>
+<img src="java.jpg" class="i0"/>
+<hr>
+<h1>边框样式，分别统一设置</h1>
+<img src="java.jpg" class="i1"/>
+<hr>
+<h1>边框样式，统一设置</h1>
+<img src="java.jpg" class="i2"/>
+<hr>
+<h1>边框样式，上线左右分别统一设置，也可以上线左右分别设置，但是麻烦</h1>
+<img src="java.jpg" class="i3"/>
+<hr>
+<h1>图片大小设置</h1>
+<img src="java.jpg" class="i4"/>
+<hr>
+<h1>图文混排</h1>
+<img src="java.jpg" class="i5"/>
+<p>Java之父——詹姆斯·高斯林出生于加拿大，是一位计算机编程天才。在卡内基·梅隆大学攻读计算机博士学位时，他编写了多处理器版本的Unix操作系统。</p>
+<p>
+    1991年，在Sun公司工作期间，高斯林和一群技术人员创建了一个名为Oak的项目，旨在开发运行于虚拟机的编程语言，同时允许程序在电视机机顶盒等多平台上运行。后来，这项工作就演变为Java。随着互联网的普及，尤其是网景开发的网页浏览器的面世，Java成为全球最流行的开发语言。因此被人称作Java之父。</p>
+<p>
+    高斯林一直对oracle公司抱有不满。这位工程师在离开甲骨文时写到，“我所说的都关乎细节与诚实，但吐露真相只会带来更多的坏处。”并称，“在Sun与oracle的并购会议上，到处是有关Sun和谷歌专利的争吵。oracle律师的眼睛闪闪发光。”
+    他表示，在收购Sun的早期阶段，oracle就表示出要同谷歌展开法律交锋的意愿。他本人也曾批评Android市场上的碎片化现象太过严重，足以影响软件开发者的工作。</p>
+<hr>
+<h1>竖直对齐</h1>
+<p>竖直对齐,默认baseline：<img class="i6" src="./red.jpg"/><span>xyz</span><img src="./blue.jpg"/></p>
+<p>竖直对齐,top：<img class="i7" src="./red.jpg"/><span>xyz</span><img class="i7" src="./blue.jpg"/></p>
+<p>竖直对齐,middle：<img class="i8" src="./red.jpg"/><span>xyz</span><img class="i8" src="./blue.jpg"/></p>
+<p>竖直对齐,bottom：<img class="i9" src="./red.jpg"/><span>xyz</span><img class="i9" src="./blue.jpg"/></p>
+
+
+<p>竖直对齐：<img src="./red.jpg" style="vertical-align: text-bottom;"/> <span>方式：</span><img src="./blue.jpg"
+                                                                                         style="vertical-align: text-bottom;"/>text-bottom
+</p>
+<p>竖直对齐：<img src="./red.jpg" style="vertical-align: text-top;"/> 方式：<img src="./blue.jpg"
+                                                                         style="vertical-align: text-top;"/>text-top
+</p>
+<p>竖直对齐：<img src="./red.jpg" style="vertical-align: sub;"/> 方式：<img src="./blue.jpg" style="vertical-align: sub;"/>sub
+</p>
+<p>竖直对齐：<img src="./red.jpg" style="vertical-align: super;"/> 方式：<img src="./blue.jpg"
+                                                                      style="vertical-align: super;"/>super</p>
+<p>竖直对齐：<img src="./red.jpg" style="vertical-align: 20px;"/> 方式：<img src="./blue.jpg" style="vertical-align: 20px;"/>20px;
+</p>
+<p>竖直对齐：<img src="./red.jpg" style="vertical-align: -20px;"/> 方式：<img src="./blue.jpg"
+                                                                      style="vertical-align: -20px;"/>-20px;</p>
 </body>
 </html>

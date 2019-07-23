@@ -42,7 +42,13 @@
     6.列表样式：列表符号 图片
 7.css 位置
     float、display、position、z-index、display
-    position根据第一个父包含块定位。
-    包含块：元素一旦定义了定位（相对、绝对、固定）就是包含块了，根元素html是初始包含块。
+    float：如果不指定大小，则大小变为实际内容的大小。
+    position：
+        absolute，定位根据第一个父包含块定位。
+            包含块：元素一旦定义了定位（相对、绝对、固定）就是包含块了，根元素html是初始包含块。
+        fixed，相对浏览器定位，当于上了一层了。
+        relative，定位根据原本的位置定位。
+    z-index：
+        一般和position配合使用
 8.css 大小
     

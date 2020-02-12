@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>盒子浮动float</title>
+</head>
+<body>
+<div class="parent">
+	<p>盒子浮动float :none，默认值,left、right。只能左右浮动，一个浮动元素会尽量向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。</p>
+	<div class="d1" style="float: none">盒子A</div>
+	<p>在 CSS 中，任何元素都可以浮动。浮动元素会生成一个块级框，如果不指定大小，则会尽可能地窄。</p>
+	<div class="d2" style="float:left ">盒子B</div>
+	<p>注释：假如在一行之上只有极少的空间可供浮动元素，那么这个浮动元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。</p>
+	<p>元素浮动之后，脱离文档流，但是会占用文档控件，周围的元素会重新排列。</p>
+</div>
+</body>
+</html>
+<style type="text/css">
+	.parent{
+		padding: 15px;
+		background-color: yellow;
+		border: 1px solid red;
+	}
+
+	.d1{
+		background-color: gray;
+		border: 1px solid gray;
+	}
+
+	.d2{
+		background-color: blue;
+		border: 1px solid blue;
+	}
+
+	p{
+		margin: 5px;
+		background-color: green;
+		border: 1px solid green;
+	}
+</style>

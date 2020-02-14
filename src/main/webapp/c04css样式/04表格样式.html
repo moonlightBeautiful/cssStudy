@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设置表格样式</title>
+    <style type="text/css">
+        .table {
+            /*表格边框，只是四面有边框*/
+            border: 1px gray solid;
+            /*边框间距离，在border-collapse属性为separate时才有用*/
+            border-spacing: 0px;
+            /*边框分离、合并，默认分离separate  合并collapse*/
+            border-collapse: collapse;
+            /* 表格宽度 */
+            width: 500px;
+            height: 500px;
+            /* 表格布局 默认auto，宽度随单元格长度改变，指定width也没用，fixed宽度固定，不会岁单元格内容改变*/
+            table-layout: fixed;
+        }
+
+        .t caption {
+            font-size: 24px;
+        }
+
+        .table th {
+            /*表头表格边框*/
+            border: 1px gray solid;
+            /*表格边框与内容的距离*/
+            padding: 5px;
+        }
+
+        .table td {
+            /*表格边框*/
+            border: 1px gray solid;
+            /*表格边框与内容的距离*/
+            padding: 5px;
+        }
+
+        /* 隔行换色，就是隔行设置class*/
+        tbody tr.even {
+            background-color: #AAA;
+        }
+
+        /* 弟弟选择器，第二列 */
+        th + td {
+            text-align: center;
+        }
+
+        /* 弟弟选择器，第四列 */
+        th + td + td + td {
+            text-align: center;
+            background-color: red;
+        }
+
+        /* 后代选择器，指定列鼠标移动过事件 */
+        tbody tr:HOVER {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<table class="table">
+    <caption>学生信息</caption>
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>出生日期</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>1</th>
+        <td>001</td>
+        <td>魏安复</td>
+        <td>男</td>
+        <td>2012-12-12</td>
+    </tr>
+    <tr class="even">
+        <th>2</th>
+        <td>002</td>
+        <td>杜子腾</td>
+        <td>女</td>
+        <td>2011-11-11</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <td>003</td>
+        <td>史珍湘</td>
+        <td>女</td>
+        <td>2010-10-10</td>
+    </tr>
+    <tr class="even">
+        <th>4</th>
+        <td>004</td>
+        <td>梅读</td>
+        <td>女</td>
+        <td>2009-10-10</td>
+    </tr>
+    <tr>
+        <th>5</th>
+        <td>005</td>
+        <td>赖月金</td>
+        <td>男</td>
+        <td>2008-01-01</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <th>总计</th>
+        <th colspan="4">5条数据</th>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>

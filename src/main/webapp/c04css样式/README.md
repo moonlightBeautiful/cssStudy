@@ -40,3 +40,14 @@ hello
     2.图片样式
         vertical-align 图片垂直方向的位置，也可以用于文本
     3.背景颜色和背景图片
+    4.表格样式
+        给table标签加border边框，td单元格不会有，所以需要 table td { border边框 }。border不能继承。
+        border-collapse：边框是合并collapse还是分离separate。
+        border-spacing: 边框与边框的距离
+        table-layout：表格宽度，默认值auto，根据表格内容，表格大小自动调整大小。with不管用。fixed，固定with宽度。
+        note：表格的高度，很难把握。不管怎么设置，不会低于最小要求。大于最小要求，则按大于的值来算，
+    5.列表样式 
+        列表符号list-style-type 默认实心圆圈和数字，none没有 circle圆圈 square方块
+        列表图片符号list-style-image   url("./li.png")
+        
+        

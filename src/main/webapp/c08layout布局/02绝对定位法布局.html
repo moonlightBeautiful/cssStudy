@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>绝对定位法</title>
+<title>绝对定位法布局</title>
 <style type="text/css">
 	body{
 		text-align: center;
@@ -17,23 +17,24 @@
 	#head,#container,#foot{
 		width: 900px;
 	}
-	
 	#container{
-		border:0px;
+		border:2px blue solid;
 		position: relative;
 		height: 250px;
 	}
-	
 	#content{
+		border:2px green solid;
 		position: absolute;
 		width: 700px;
 		height: 200px;
 	}
-	
+
 	#side{
 		margin-left: 750px;
 		height: 100px;
 	}
+
+
 </style>
 </head>
 <body>

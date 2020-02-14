@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>盒子定位position absolute 以它的包含框为基准进行定位。元素框将会从文档流完全删除，它原本所占的空间不保留，会覆盖其它元素及内容。元素框大小会变化元素框内容的大小变化。</title>
+<title>absolute</title>
 <style type="text/css">
 	.parent{
 		position:relative;
@@ -15,16 +15,16 @@
 		padding:10px;
 		background-color: blue;
 		border: 1px solid gray;
-        position:absolute;
-        left:30px;
-        top:0px;
+		position:absolute;
+		/*left:30px;
+		top:0px;*/
 	}
 	
 </style>
 </head>
 <body>
 <div class="parent">
-	22<div class="son">儿子</div>223333333333
+	以包含框为基准进行定位<div class="son">儿子，absolute：首先元素框将会从文档流完全删除，它原本所占的空间不保留，大小会尽可能的小。</div>223333333333
 </div>
 </body>
 </html>

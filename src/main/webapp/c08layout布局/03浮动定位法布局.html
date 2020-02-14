@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>浮动法</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+
+        #head {
+            border: 3px solid red;
+        }
+
+        #container {
+            border: 3px solid green;
+        }
+
+        #content {
+            border: 3px solid black;
+        }
+
+        #side {
+            border: 3px solid blue;
+        }
+
+        #foot {
+            border: 3px solid lawngreen;
+        }
+
+        #head, #container, #foot {
+            width: 1100px;
+        }
+
+        #head, #container, #foot, #content, #side {
+            margin: 10px auto;
+            padding: 20px 10px;
+        }
+
+        #content {
+            float: left;
+            width: 750px;
+            height: 200px;
+        }
+
+        #side {
+            float: right;
+            width: 280px;
+            height: 200px;
+        }
+
+        #foot {
+            clear: both;
+        }
+
+        /*
+                #container {
+                    border: 0px;
+                }*/
+    </style>
+</head>
+<body>
+
+<div id="head">head</div>
+<div id="container">
+    <div id="content">content</div>
+    <div id="side">side</div>
+</div>
+<div id="foot">foot</div>
+
+</body>
+</html>

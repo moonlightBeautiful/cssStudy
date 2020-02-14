@@ -10,20 +10,23 @@
 <br>
 <br>
 <hr>
-<div id="div1" style="margin-bottom: 30px;">竖直margin=取外边距最大值</div>
-<div id="div2" style="margin-top: 50px;">竖直margin=取外边距最大值</div>
+<div id="div1" style="margin-bottom: 20px;">竖直margin=取外边距最大值</div>
+<div id="div2" style="margin-top: 5px;">竖直margin=取外边距最大值</div>
 <br>
 <br>
 <hr>
-<div style="margin: 10px;border: 2px blue solid;">块1，外边框，是外面最先接触到的能接触的内容，可以是边框可以是文本
-    <div style="margin: 20px;border: 2px blue solid;">块2</div>
+<div style="border: 2px blue solid;">嵌套，外边框，是外面最先接触到的能接触的内容，可以是边框可以是文本
+    <div style="margin: 50px;border: 2px green solid;">子元素的margin则是距离包含框、包含框内容、其他边框距离。</div>
+    <div style="margin: 50px;border: 2px green solid;">子元素的margin则是距离包含框、包含框内容、其他边框距离。</div>
 </div>
 <br>
 <br>
 <hr>
-<span style="margin-right: 10px;border: 2px blue solid;">负数margin</span>
-<span style="margin-left: -30px;border: 2px blue solid;">负数margin</span>
-
+<span style="border: 2px blue solid; background-color: #A62020">负数margin</span>
+<span style="margin-left: -30px;border: 2px green solid;background-color: rosybrown">负数margin</span>
+<br>
+<br>
+<hr>
 <p>
     margin:10px 5px 15px 20px;
     从上开始，顺时针转。
@@ -50,17 +53,9 @@
 </body>
 </html>
 <style>
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-    }
 
-    html {
-        border: 2px red solid;
-    }
 
-    body, #span1, #span2, #div1, #div2 {
+    span,div {
         border: 2px blue solid;
     }
 

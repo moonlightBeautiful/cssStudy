@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <title>“子”选择器</title>
     <style type="text/css">
-        div > p {
-            color: pink;
-        }
-
         div > span {
-            color: blue;
+            background-color: blue;
         }
     </style>
 </head>
 <body>
 <div>
-    <span>儿子</span>
+    <span>儿子<p>子<span>孙子</span>儿子</p></span>
     <p>儿子<span>孙子</span>儿子</p>
 </div>
 </body>

@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>relative</title>
+<title>默认值static，按照标准文档流定位。</title>
 <style type="text/css">
-	.parent,.son{
+	.parent{
 		background-color: red;
 		border: 1px solid red;
 		padding:15px;
@@ -13,17 +13,14 @@
 	.son{
 		background-color: blue;
 		border: 1px solid blue;
-		position:relative;
-		left:30px;
-		top:30px;
+		position:static;
 	}
 	
 </style>
 </head>
 <body>
 <div class="parent">
-	12<div class="son">儿子</div>22
+	<div class="son">儿子</div>
 </div>
-<p>ssssssssssssss</p>
 </body>
 </html>
